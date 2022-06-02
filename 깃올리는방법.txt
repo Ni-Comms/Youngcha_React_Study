@@ -10,10 +10,11 @@ git commit -m "Feature :: Start Project" -> 코멘트
 
 git remote add origin https://github.com/Ni-Comms/React-Practice.git =>
 
-git branch youngcha => 브런치만들기
+git branch -M youngcha => 브랜치만들기
+(git branch -M 브랜치이름, 브랜치가 필요없을시에는 생략하면됨.)
 
-git push origin youngcha => 현재제경로에있는 파일을 브런치에 올리기
-
+git push origin youngcha => 현재제경로에있는 파일을 브랜치에 올리기
+(마스터에 올릴땐 git push origin master)
 ----------------------------------
 깃올릴떈 
 
