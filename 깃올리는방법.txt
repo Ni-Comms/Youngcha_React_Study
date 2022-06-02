@@ -1,0 +1,29 @@
+깃배쉬 프로그램 키고 
+
+/d/youngcha/◈개발관련_리액트 스터디/댕발자들 리액트 스터디/STUDY/20220602
+
+git init => 처음할떄만.
+
+git add . => 수정한 파일을 전체올리기. (. 은 전체파일올리기)
+
+git commit -m "Feature :: Start Project" -> 코멘트
+
+git remote add origin https://github.com/Ni-Comms/React-Practice.git =>
+
+git branch youngcha => 브런치만들기
+
+git push origin youngcha => 현재제경로에있는 파일을 브런치에 올리기
+
+----------------------------------
+깃올릴떈 
+
+git add . 
+
+git commit -m "코멘트내용"
+
+git push origin 브런치이름(youngcha)
+
+-----------------------------------
+깃 삭제
+.git 파일이 있는 곳 가서 
+rm -r -f .git

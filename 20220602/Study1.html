@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/@babel/standalone/babel.min.js"
+    ></script>
+
+    <div id="root"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("root");
+      const text = "hello!";
+      const titletest = "title";
+      const props = { className: titletest, children: text };
+      //const h1cus = <h1 {...props} />; //스프레드문법 ...3개사용
+      const h1cus = (
+        <h1 className={props.className} children={props.children} />
+      );
+      const element = h1cus;
+      ReactDOM.render(element, rootElement);
+    </script>
+  </body>
+</html>
