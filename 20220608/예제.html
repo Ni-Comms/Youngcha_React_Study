@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/@babel/standalone/babel.min.js"
+    ></script>
+
+    <div id="root"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("root");
+      const App = () => {
+        const [temp, setTemp] = React.useState(() => {
+          //1.
+          console.log("set default temp value");
+          //2.
+          return "default"; // temp 세팅
+        });
+
+        React.useEffect(() => {
+          //4. //7.
+          console.log(`useEffect :: ${temp}`);
+          //5. //8.[temp] =>감지를해서 랜더를 한번더함.
+          setTemp("changed tepm value");
+        }, [temp]);
+
+        //3.
+        //6.
+        //8.
+        return <>{console.log(`Render :: ${temp}`)}</>;
+      };
+
+      ReactDOM.render(<App />, rootElement);
+    </script>
+  </body>
+</html>
