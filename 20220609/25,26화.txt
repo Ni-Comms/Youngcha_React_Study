@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/@babel/standalone/babel.min.js"
+    ></script>
+
+    <div id="root"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("root");
+
+      const todos = [
+        [
+        { id: 1, value: "1_아이템" },
+        { id: 2, value: "2_아이템" },
+        { id: 3, value: "3_아이템" },
+        { id: 4, value: "4_아이템" }
+        ],
+        [
+        { id: 4, value: "4_아이템" },
+        { id: 3, value: "3_아이템" },
+        { id: 2, value: "2_아이템" },
+        { id: 1, value: "1_아이템" }
+        ],
+        [
+        { id: 3, value: "3_아이템" },
+        { id: 2, value: "2_아이템" },
+        { id: 4, value: "4_아이템" },
+        { id: 1, value: "1_아이템" }
+        ]
+      ];
+
+      const App = () => {
+        const [items, setItems] = React.useState(todos);
+
+        React.useEffect(() => {
+          const interval = setInterval(() => {
+            const random = Math.floor(Math.random() * 3);
+            setItems(todos[random]);
+          },1000);
+          return () => {
+            clearInterval(interval);
+          };
+
+        },[]);
+
+        const handleDoneClick = (todo) => {
+          setItems((items) => items.filter((item) => item !== todo));
+        };
+
+        const handleRestoreClick = () => {
+          setItems((items) => [
+            ...items,
+            todos.find((item) => !items.includes(item))
+          ]);
+        };
+
+        return (
+          <>
+            {items.map((todo) => (
+              <div key={index}>
+                <button onClick={()=>handleDoneClick(todo)}>
+                  {todo.value}
+                </button>
+              </div>
+              <br/>
+              <br/>
+              <button onClick={handleRestoreClick}>Restore</button>
+            ))}
+          </>
+        );
+      };
+
+      ReactDOM.render(<App />, rootElement);
+    </script>
+  </body>
+</html>
