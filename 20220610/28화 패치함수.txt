@@ -1,0 +1,2 @@
+Fetch API
+https://raw.githubusercontent.com/techoi/raw-data-api/main/simple-api.json

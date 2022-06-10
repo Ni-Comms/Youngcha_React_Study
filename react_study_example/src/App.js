@@ -1,68 +1,34 @@
 import React from 'react';
 
 function App() {
-  const [id, setId] = React.useState("");
+  const [data, setData] = React.useState();
+  const [error, setError] = React.useState();
   
-  const [password, setPassword] = React.useState("");
+  React.useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/techoi/raw-data-api/main/simple-api.json"
+    ).then(function(response){
+      return response.json();
+    }).then(function(myJson){
+      setData(myJson.data);
+      console.log(myJson.data);
+    }).catch((error) =>{
+      setError(error.message);
+    });
+  },[]);
 
-  const [enable, setEnable] = React.useState(false);
+  // if(error != null){
+  //   return <p>there is some error</p>
+  // }
 
-  const handlerChange = (event) => {
-    console.dir(event.target.form);
-    // if (event.target.id === "id") {
-    //   setId(event.target.value); 
-    // }else if(event.target.id === "pw"){
-    //   setPassword(event.target.value);
-    // }
-
-    if(event.target.form[0].value !== "" && event.target.form[1].value !== ""){
-      setEnable(true);
-    }else{
-      setEnable(false);
-    }
-    // if (event.target.value.length >0) {
-    //   setEnable(true);
-    // } else if (event.target.value.length === 0) {
-    //   setEnable(false);
-    // }
-  };
-
-  // const handlerChange = (event) => {
-  //   if (event.target.value.length >0) {
-  //     setId(event.target.value);
-  //   } else if (event.target.value.length === 0) {
-  //     setId("");
-  //   }
-  // };
-
-  const handlerChange2 = (event) => {
-    event.preventDefault(); // 폼에서 서브밋할떄 화면깜빡거리는거 안하기위해
-
-    if (event.target.value.length >0) {
-      setPassword(event.target.value);
-    } else if (event.target.value.length === 0) {
-      setPassword("");
-    }
-  };
-
-  const handleSubmit = (event) =>{
-    event.preventDefault(); // 폼에서 서브밋할떄 화면깜빡거리는거 안하기위해
-    alert(`아이디: ${id} \n패스워드: ${password}`) ;
-  };
+  // if(data == null){
+  //   return <p>there is no data</p>
+  // }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="id">ID :</label>
-      {/* <input id="id" name="id" onChange={handlerChange2}/> */}
-      <input id="id" name="id" onChange={handlerChange}/>
-      <br />
-      <label htmlFor="pw">PW :</label>
-      <input id="pw" name="pw" type="password" onChange={handlerChange} />
-      {/* <button type="submit" disabled={id === "" || password === ""}> */}
-      <button type="submit" disabled={!enable}>
-        Login
-      </button>
-    </form>
+    <div>
+      {data && data.people.map(value => <div>{value.name}</div>)}
+    </div>
   );
 }
 
