@@ -1,0 +1,51 @@
+20220613월요일 강의
+
+* 맛보기2part  3. jsx란?
+const name = 'jason';
+const element = <h1>jason</h1>;
+const element = <img src= {user.url} > </img>; => 중가로사용하여 자바스크립트 사용가능
+const element = (
+	<div>
+		<h1>test</h1>
+	</div>
+);=>사용가능
+* jsx는 React.createElement 간편 표현식이다.
+
+4.props란?
+props란 component를 동시에 다룸.
+component는 항상 대문자로 사용해야됨.
+컴포넌트 합성 : 자신의 출력에 다른 컴포넌트를 참조할수 잇음.
+
+props => 컴포넌트에 전달되는 단일객체, 순수함수 , 수정하면안되는 함수다.
+순수함수처럼 동작 => props 자체를 수정해선 안됨.
+컴포넌트 합성 => 여러 컴포넌트를 모아서 합성.
+컴포넌트 추출 => 여러곳에서 사용되거나/ 복잡한 경우에 사용
+
+5.state와 라이프사이클
+rfc 컨트롤 + 스페이스바 => 펀션함수 생성
+rcc 컨트롤 + 스페이스바 => 클래스형 함수 생성
+rafce 컨트롤 + 스페이스바 => 기본함수 생성
+함수형컴포넌트가 현재는 더많이 쓰이고 있음.
+컴포넌트의 사태 => 자신의 출력값을 변경
+Class component => State Life cycle
+Funtional component => 훅으로 관리
+유의사항 => 직접 수정하지 않고 , 비동기적일수도 있음.
+
+6.컴포넌트 생명주기(life cycle)
+*마운트시
+1. consturctor
+2. render
+3. componentDidMount
+*업데이트시
+1. render
+2. componentDidUpdate
+*마운트해제시
+1. componentWillUnmount
+
+constructor => state 초기화 및 메서드 바인딩
+componentDidmount => dom 노드 초기화 및 데이터 fetch
+componentWillUnmout => 타이머 제거 미 요청 취소 및 구독 해제
+Funtional Component => hook으로 대부분 구현 가능
+
+
+
