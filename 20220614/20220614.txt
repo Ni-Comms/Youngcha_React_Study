@@ -1,0 +1,39 @@
+20220614
+
+*7번강좌 합성이벤트
+합성이벤트 => 이벤트는 같지만직접 대응되지 않음
+
+버블링/캡쳐링 = > Capture >target > bubble
+
+return false  => e.preventDefault() 를 직접 해줘야함.
+
+*8번강좌 조건부 렌더링
+
+if문 =>> if(condition){return A} else {return B}
+
+&& =>> condition && A, falsy(=0일떄 false로 인식할수있다 주의
+
+삼항연산자 =>> condition ? A: B
+
+아예안그리고 싶은 경우 ==> return null하면됨.
+
+*9번강좌 List
+
+map => 배열의 개별요소를 순회
+
+default key => 안주면 react는 index를 쓴다 (워닝 O)
+
+고유성  => 형제 사이에서만 고유하면됨.
+
+key props => key는 props로 넘어가지 않음.
+
+
+*10번강좌 form
+
+controlled component => input의 value를 state로 관리
+
+다중입력 => event.target.name
+
+unControlled component => form element 자체의 내부상태 활용
+
+defaultValue,  ref => 기본값 / value 확인
