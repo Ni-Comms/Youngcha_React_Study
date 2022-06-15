@@ -1,0 +1,30 @@
+* HOOKS 강의 
+훅의등장 -> CLASS의 단점보완/ 재사용성 강화
+
+훅의 사용규칙 -> 최상위/함수형 컴포넌트/커스텀 훅
+
+클래스의 STATE -> 훅을 먼저 배웠기에 고민할 필요 X
+
+* EFFECT HOOK 강의
+React의 class 생명주기 메서드에 친숙하다면, 
+useEffect Hook을 componentDidMount와 componentDidUpdate, componentWillUnmount가 합쳐진 것으로 생각해도 좋다.
+  
+useEffect => 데이터 fetch / 구족 /dom 수정
+
+clean up => 구독과 구독해지를 한 공간에서 
+
+dependency array => 필요한 변경시에만 effect 실행
+
+* CUSTOM HOOK 강의
+useState: 이전 값을 인자로 / 초기화 지연(함수)
+
+useEffect: 의존성 배열, 안주거나 / [] / [a, b]
+
+useReducer: useState 대체 state / reducer / action
+
+useRef: current 라는 상자. 내용의 변경은 알려주지 않음. 콜백 ref 사용
+
+Custom Hook => 컴포넌트들에 반복되는 Hooks 묶기
+다양한 Hooks => 필요한 타이밍에 참고해서 사용
+
+* HOOKS
