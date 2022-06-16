@@ -1,5 +1,9 @@
 import React from 'react';
-import Test from './components/3-5.Composition&Inheritance/Test';
+import Memo from './components/3-8.Memoization/Memo';
+//import ThankyouDialog from './components/3-6.Composition/ThankyouDialog';
+//import Dialog from './components/3-6.Composition/Dialog';
+//import WelcomeDialog from './components/3-5.Composition&Inheritance/WelcomeDialog';
+//import Test from './components/3-5.Composition&Inheritance/Test';
 //import State from './components/3-3.Hooks/State';
 //import Reducer from './components/3-3.Hooks/Reducer';
 //import Event from './components/2-7.Event/Event';
@@ -16,8 +20,11 @@ import Test from './components/3-5.Composition&Inheritance/Test';
 
 function App() {
   return (
-      <div className="App"> 
-        <Test/>
+      <div className="App">
+        <Memo/>
+        {/* <ThankyouDialog/> */}
+        {/* <WelcomeDialog/> */}
+        {/* <Test/> */}
         {/* <Reducer/>
         <State/> */}
         {/* <UncontrolledComponent/>

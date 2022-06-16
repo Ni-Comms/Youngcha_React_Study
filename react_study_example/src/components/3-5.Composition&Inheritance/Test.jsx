@@ -1,21 +1,32 @@
 import React from 'react'
 
-export default function Test() {
-
-    const Title = () => {
-        return <input name="id"/>;
+export default function Test () {
+    const Container=(props)=>{
+        return <div >{props.children}  
+             {/* .children    */}
+        </div>
     }
 
-    const Container = () =>{
+    const Id=()=>{
+        return <div>
+            <label>ID :</label>
+            <input name="id" />
+        </div>
+    }
 
-        return <div></div>;
+    const Pw=()=>{
+        return <div>
+            <label>PW :</label>
+            <input type='password' name="pw" />
+        </div>
     }
     
-  return (
-    <div>
-        <Container>
-            <Title/>
-        </Container>
-    </div>
-  )
+    return (
+        <div>
+            <Container>
+                <Id/>
+                <Pw/>
+            </Container>
+        </div>
+    )
 }

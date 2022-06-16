@@ -1,3 +1,13 @@
+
+
+## [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fchayeongha&count_bg=%23D2D8CD&title_bg=%233D6CB8&icon=java.svg&icon_color=%23FFFFFF&title=HITS&edge_flat=true)](https://hits.seeyoufarm.com) 
+
+## STATUS 
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chayeongha&show_icons=true&theme=radical)
+
+
+
 ## React Study Project
 - StartDate
 ```
@@ -13,3 +23,5 @@ useState -> Render -> useEffect -> cleanUp
 ```
 - Class
 <img width="1381" alt="LifeCycle" src="https://user-images.githubusercontent.com/60730831/172768946-90462b3b-c2d6-4763-a1cc-4d69d6f180ad.png">
+
+#### 만약 로드된 후 애니메이션을 다시 보고싶으시면 `ctrl + shift + R` 을 눌러서 강력 새로고침을 하시면 다시 보실 수 있습니다!
