@@ -1,13 +1,3 @@
-
-
-## [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fchayeongha&count_bg=%23D2D8CD&title_bg=%233D6CB8&icon=java.svg&icon_color=%23FFFFFF&title=HITS&edge_flat=true)](https://hits.seeyoufarm.com) 
-
-## STATUS 
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=chayeongha&show_icons=true&theme=radical)
-
-
-
 ## React Study Project
 - StartDate
 ```
