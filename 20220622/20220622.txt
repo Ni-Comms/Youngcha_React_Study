@@ -1,0 +1,28 @@
+part2 chapter 1
+
+	라이브러리란?
+
+	라이브러리 -> 공구/도구
+
+	라이블러리 도입과정-> 필요> 검색> 사용법파악>적용
+
+	사용법을 익히기 보다 찾고 / 적용하는 과정을 익히자
+
+	4. date-fns 실습
+
+	5. 라이브러리를 고르는 기준 
+
+part2 chapter 2 
+	
+	1.styled -component
+
+	CSS in JS  => CSS의 문제점을 해소
+
+	해결책  => 스타일을 style 태그로 분리
+
+	사용법(Template literals)  => styled.{element}``
+
+	styled(스타일드컴포넌트) => 상속
+
+
+
