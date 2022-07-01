@@ -1,0 +1,7 @@
+05.ant-design 2-2 강좌
+06.React Sementic UI 1강좌
+
+* SEMENTIC 라이브러리에서 MIN.CSS를 제대로 못가져오는 현상이 발생.
+-> 해결방법
+semantic-ui-css 폴더안 min.css 안에 charset=utf-8;; 세미콜롬 두개를charset=utf-8; 로바꾸고.
+semantic-ui-css 폴더를 semantic-test-ui-css 명으로 바꿔줌.
