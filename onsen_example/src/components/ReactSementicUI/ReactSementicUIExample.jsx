@@ -1,10 +1,14 @@
-import React from 'react'
-import ButtonExampleLabeledBasic from './ButtonExampleLabeledBasic'
+import React from "react";
+import ListExample from "./ListExample";
+import ButtonExampleLabeledBasic from "./ButtonExampleLabeledBasic";
+import VisibilityProgressExample from "./VisibilityProgressExample";
 
 export default function ReactSementicUIExample() {
   return (
     <div>
-        <ButtonExampleLabeledBasic/>
+      <ListExample />
+      <ButtonExampleLabeledBasic />
+      <VisibilityProgressExample />
     </div>
-  )
+  );
 }

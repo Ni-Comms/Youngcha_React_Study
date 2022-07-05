@@ -4,16 +4,26 @@
 //import "onsenui/css/onsen-css-components.css";
 //import OnsenUIExample from "./components/OnsenUI/OnsenUIExample";
 //import AntDesignExample from "./components/AntDesign/AntDesignExample";
-import "semantic-test-ui-css/semantic.min.css";
-import ReactSementicUIExample from "./components/ReactSementicUI/ReactSementicUIExample";
-
+//import "semantic-test-ui-css/semantic.min.css";
+//import ReactSementicUIExample from "./components/ReactSementicUI/ReactSementicUIExample";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import GridExample from "./components/ReactBootstrap/GridExample";
+import ButtonExample from "./components/ReactBootstrap/ButtonExample";
+import CarouselExample from "./components/ReactBootstrap/CarouselExample";
+import MyModalExample from "./components/ReactBootstrap/MyModalExample";
 function App() {
   return (
-    //<div className='App'>
+    <>
+      <GridExample />
+      <ButtonExample />
+      <CarouselExample />
+      <MyModalExample />
+    {/* //<div className='App'>
     // <OnsenUIExample />
     //<AntDesignExample />
-    <ReactSementicUIExample />
-    //</div>
+    // <ReactSementicUIExample />
+    //</div> */}
+    </>
   );
 }
 
