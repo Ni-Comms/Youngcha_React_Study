@@ -1,0 +1,19 @@
+tailwindcss 설정시 craco start부분에서 에러가떠서 해결하고잇음
+
+=> https://tailwindcss.com/docs/guides/create-react-app 들어가서 해당내용 따라하고
+
+craco.config파일을 
+
+// craco.config.js
+module.exports = {
+  style: {
+    postcssOptions: {
+      plugins: [
+        require('tailwindcss'),
+        require('autoprefixer'),
+      ],
+    },
+  },
+}
+
+해줌.
