@@ -16,13 +16,20 @@
 // import CheckBoxLabels from "./components/MaterialUI/CheckBoxLabels";
 // import DrawerExample from "./components/MaterialUI/DrawerExample";
 // import VirtualizedList from "./components/MaterialUI/VirtualizedList";
-import TailWindExample from "./components/TailWind/Example";
-import ButtonExample from "./components/TailWind/ButtonExample";
+// import TailWindExample from "./components/TailWind/Example";
+// import ButtonExample from "./components/TailWind/ButtonExample";
+// import MessageExample from "./components/TailWind/MessageExample";
+// import Position from "./components/TailWind/Position";
+import ReactSpringExample from "./components/ReactSpring/ReactSpringExample";
+
 function App() {
   return (
     <>
+      <ReactSpringExample />
+      {/* <Position />
+      <MessageExample />
       <ButtonExample />
-      <TailWindExample />
+      <TailWindExample /> */}
       {/* <VirtualizedList />
       <DrawerExample />
       <CheckBoxLabels />
