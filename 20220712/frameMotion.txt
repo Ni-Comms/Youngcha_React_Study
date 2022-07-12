@@ -1,0 +1,131 @@
+react part3 chapter2 
+
+*FramerMotion 강좌 
+
+*라이브러리 복습 강좌
+
+
+1. Onsen UI
+	UI 라이브러리 -> 스타일링 된 컴포넌트 제공
+	
+	기본적인 기능 제공 -> (ex. Action Sheet)
+	
+	JS / Vue / React / Angular -> 모두 서포트
+	
+	모바일 대응 -> 안드로이드 / 아이폰 대응
+	
+	다양한 컴포넌트 -> 모바일 케이스 대응
+	
+	아이콘 -> Font Awesome / Ionicons
+
+	문서 최신화 -> 잘 안되는 듯(React에 불친절)
+
+2.Ant Design
+	React React -> 베이스
+
+	Day.js Moment.js ->제거 추천
+
+	Design 철학 -> 단순한 컴포넌트 제공 + @
+
+	Typography ->다양한 사이즈의 Text
+
+	Layout 화면 구조를 간편하게 배치
+	
+	다양한 Component -> 복붙만으로 화면 구성 가능
+
+	문서를 읽는 방법 -> 익히기 좋음
+
+3.React Semantic UI
+	Semantic Web -> 웹 접근성
+
+	JQuery 기반Semantic UI -> 리액트용으로 제공
+
+	Try It -> 변경을 바로 확인 가능
+
+	as props -> Semantic 한 tag 사용 가능
+
+	Comment / Feed -> 다 만들어서 제공
+
+	다양한 컴포넌트 -> 웹 서비스 구성에 필요한 거의 모든
+
+	여러 컴포넌트 조합 -> visibility + progress
+
+4. React Bootstrap
+	반응형 웹  -> xs / md / lg
+	
+	Sass -> @import 해서 쓸 수 있음
+	
+	익숙한 UI -> Bootstrap 을 그대로 가져옴
+
+	컬러 시스템 ->통일성 있음
+
+	Admin -> Admin 페이지에서 자주 본 스타일
+
+	Utilities -> Transitions / Ratio
+
+5.Material UI
+	Material Design - >구글이 선도한 디자인 시스템
+
+	다양한 서포트 -> Example Project / Design Tools
+
+	FAQ -> 실무 과정에서 마주할 이슈들 정리
+
+	Layout / Theme -> 체계화 된 시스템
+
+	API 구성 -> Components / API / Demo
+	
+	makeStyles -> 컴포넌트의 구조를 관장
+
+	Virtual List -> Virtual scroll
+
+	System -> 순수한 커스텀 컴포넌트 생성 가능
+
+6.Tailwind CSS
+	컴포넌트  -> 자체를 제공하진 않음(유료)
+	
+	class -> 스타일 요소를 모두 줌 
+
+	Tiny -> 빌드할때는 사용하는 class만
+
+	Intelli Sense -> VS code extension 제공
+
+	Utility First -> 클래스 이름 생성 X / CSS 추가 X
+
+	다크모드 -> 대응 용이(media / class)
+
+	Customize -> configuration 차원에서
+	
+	대부분의 css -> 커버함 (but 예제는 아쉽…)
+
+7.React spring
+	좀 더 나은 애니메이션 -> 물리엔진
+
+	hooks -> use{*}
+
+	animated -> Outside React
+
+8.Framer Motion
+	Framer -> Design + Frontend Tool
+
+	Motion -> Animation 기능이 들어간 Component
+
+	Variants -> Propagation / Orchestration
+
+	Gestures / MotionValue -> 편의 기능들 제공
+
+*새로운 라이브러리 적용
+	새로운 라이브러리를 적용하는 경험
+	필요에 따라서 라이브러리를 찾고(alternatives *)
+	공식 문서로 라이브러리에 대해 파악하고(Introduction)
+	공식 문서 따라 설치하고(Installation)
+	공식 문서 예제(Examples) 따라해보고 api 문서 보고 적용해본다.
+	특별할 게 없다.
+	특별할 게 없다 === 강의를 듣는다고 끝나는 게 아니다.
+	라이브러리의 트렌드 또한 빠르게 변한다.
+	2년전에 당연했던 선택들이 지금은 당연하지 않다.
+	결국 스스로 새로운 라이브러리를 적용해보는 능력(경험 / 짬)이 관건
+	라이브러리의 적용은 정답이 없다.
+	맞는 것도 없지만 틀린 것도 없다.
+	만든 이의 설명과 가이드에 따라 내 프로젝트에 적용하는 것으로 성공적
+	계속 시도 / 반복 시도 / 새로운 기술에 대한 호기심과 궁금증
+	Just do it
