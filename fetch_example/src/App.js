@@ -1,13 +1,16 @@
 import "./App.css";
-import { observableTodoStore } from "./app/ObservableTodoStore";
+import CharacterCounter from "./components/ZustandExample/CharaterCounter";
+//import { observableTodoStore } from "./app/ObservableTodoStore";
 //import MobxExample from "./components/MobxExample";
-import TodoList from "./components/TodoList";
+import Text from "./components/ZustandExample/Text";
+import { TodoList } from "./components/ZustandExample/Todo/TodoList";
 
 function App() {
   return (
     <div className="App">
-      {/* <MobxExample /> */}
-      <TodoList store={observableTodoStore}/>
+      <Text />
+      <CharacterCounter />
+      <TodoList />
     </div>
   );
 }

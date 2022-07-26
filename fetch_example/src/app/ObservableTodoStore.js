@@ -1,16 +1,19 @@
-import { makeObservable, observable, computed, action, autorun } from "mobx";
+import { makeAutoObservable, makeObservable, observable, computed, action, autorun } from "mobx";
 class ObservableTodoStore {
   todos = [];
   pendingRequests = 0;
 
   constructor() {
-    makeObservable(this, {
-      todos: observable,
-      pendingRequests: observable,
-      completedTodosCount: computed,
-      report: computed,
-      addTodo: action,
-    });
+    // makeObservable(this, {
+    //   todos: observable,
+    //   pendingRequests: observable,
+    //   completedTodosCount: computed,
+    //   report: computed,
+    //   addTodo: action,
+    // });
+    //위와 동일
+    makeAutoObservable(this)
+
     autorun(() => console.log(this.report));
   }
 
